@@ -1,0 +1,445 @@
+/* ==========================================================================
+   COMMON.CSS — Sistema de Diseño Global (Lp · Luisa Portafolio)
+   Paleta: #191615 (Oscuro), #A9433B (Terracota/Rojo), #D16C69 (Coral),
+           #E9D8C4 (Crema), #75534B (Café), #B8A99B (Topo)
+   Tipografía: Playfair Display (Títulos) & Montserrat (Textos)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap');
+
+:root {
+  /* Colores principales */
+  --bg-dark: #191615;
+  --bg-dark-elevated: #231E1C;
+  --bg-dark-card: #2B2422;
+  --bg-cream: #E9D8C4;
+  --bg-cream-alt: #DFCBB4;
+
+  --purple-primary: #A9433B;
+  --purple-hover: #8C352E;
+  --purple-light: #D16C69;
+  --purple-soft: rgba(169, 67, 59, 0.18);
+  --brown-accent: #75534B;
+
+  --text-light: #E9D8C4;
+  --text-light-muted: #B8A99B;
+  --text-dark: #191615;
+  --text-dark-muted: #75534B;
+
+  --border-dark: rgba(184, 169, 155, 0.16);
+  --border-cream: rgba(117, 83, 75, 0.24);
+
+  /* Tipografías */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Radios y sombras */
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+  --shadow-soft: 0 12px 32px rgba(25, 22, 21, 0.32);
+  --shadow-purple: 0 10px 30px rgba(169, 67, 59, 0.34);
+
+  /* Contenedor a pantalla completa */
+  --container-max: 100%;
+  --container-pad: clamp(24px, 4.5vw, 72px);
+  --nav-height: 78px;
+  --transition: 0.28s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Modo claro opcional (activado con el botón de tema del navbar) */
+body.light-theme {
+  --bg-dark: #26201E;
+  --bg-dark-elevated: #312926;
+}
+
+/* Reset básico */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition), transform var(--transition), background var(--transition);
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Contenedor */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-pad);
+}
+
+/* ==========================================================================
+   NAVEGACIÓN PRINCIPAL
+   ========================================================================== */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: var(--nav-height);
+  background: rgba(25, 22, 21, 0.9);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border-dark);
+}
+
+.navbar__inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.navbar__logo {
+  font-family: var(--font-display);
+  font-size: 1.95rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  color: var(--text-light);
+  display: inline-flex;
+  align-items: baseline;
+  line-height: 1;
+}
+
+.navbar__logo span {
+  font-style: italic;
+  color: var(--purple-light);
+  margin-left: -2px;
+}
+
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.navbar__link {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-light-muted);
+  position: relative;
+  padding: 6px 0;
+}
+
+.navbar__link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: var(--purple-primary);
+  border-radius: 2px;
+  transition: width var(--transition);
+}
+
+.navbar__link:hover,
+.navbar__link.active {
+  color: var(--text-light);
+}
+
+.navbar__link.active::after,
+.navbar__link:hover::after {
+  width: 100%;
+}
+
+.navbar__actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* Switch decorativo / funcional de estrellas y luna (como en el boceto) */
+.theme-toggle {
+  width: 58px;
+  height: 28px;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(184, 169, 155, 0.32);
+  background: linear-gradient(135deg, #2D2523, #191615);
+  padding: 3px 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+  transition: border-color var(--transition), background var(--transition);
+}
+
+.theme-toggle:hover {
+  border-color: var(--purple-light);
+}
+
+.theme-toggle__stars {
+  font-size: 0.65rem;
+  color: var(--purple-light);
+  letter-spacing: 1px;
+}
+
+.theme-toggle__orb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--bg-cream);
+  box-shadow: 0 0 8px rgba(245, 236, 229, 0.7);
+  transition: transform var(--transition);
+}
+
+body.light-theme .theme-toggle__orb {
+  transform: translateX(-24px);
+  background: var(--purple-light);
+}
+
+/* Botón hamburguesa móvil */
+.navbar__burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 38px;
+  height: 38px;
+  background: transparent;
+  border: 1px solid var(--border-dark);
+  border-radius: 10px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.navbar__burger span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--text-light);
+  border-radius: 2px;
+  transition: transform var(--transition), opacity var(--transition);
+}
+
+/* ==========================================================================
+   BOTONES REUTILIZABLES
+   ========================================================================== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 13px 26px;
+  border-radius: var(--radius-pill);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1.5px solid transparent;
+  transition: transform var(--transition), box-shadow var(--transition), background var(--transition), color var(--transition);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn--cream {
+  background: var(--bg-cream);
+  color: var(--text-dark);
+}
+
+.btn--cream:hover {
+  background: #ffffff;
+  box-shadow: 0 10px 24px rgba(245, 236, 229, 0.22);
+}
+
+.btn--purple {
+  background: var(--purple-primary);
+  color: #ffffff;
+}
+
+.btn--purple:hover {
+  background: var(--purple-hover);
+  box-shadow: var(--shadow-purple);
+}
+
+.btn--outline-dark {
+  background: transparent;
+  color: var(--text-dark);
+  border-color: var(--text-dark);
+}
+
+.btn--outline-dark:hover {
+  background: var(--text-dark);
+  color: var(--bg-cream);
+}
+
+/* ==========================================================================
+   TEXTURAS HALFTONE Y ELEMENTOS GRÁFICOS DEL SISTEMA DE DISEÑO
+   ========================================================================== */
+.halftone-dots {
+  background-image: radial-gradient(rgba(169, 67, 59, 0.55) 1.5px, transparent 1.5px);
+  background-size: 9px 9px;
+}
+
+.halftone-dots--dark {
+  background-image: radial-gradient(rgba(117, 83, 75, 0.38) 1.5px, transparent 1.5px);
+  background-size: 8px 8px;
+}
+
+.halftone-dots--light {
+  background-image: radial-gradient(rgba(233, 216, 196, 0.32) 1.5px, transparent 1.5px);
+  background-size: 10px 10px;
+}
+
+.sparkle {
+  display: inline-block;
+  color: var(--purple-primary);
+  line-height: 1;
+}
+
+/* ==========================================================================
+   ICONOS SOCIALES & FOOTER COMPARTIDO
+   ========================================================================== */
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.social-link {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+  border: 1px solid currentColor;
+  opacity: 0.85;
+  transition: transform var(--transition), background var(--transition), color var(--transition), opacity var(--transition);
+}
+
+.social-link:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+  background: var(--purple-primary);
+  border-color: var(--purple-primary);
+  color: #ffffff;
+}
+
+.site-footer {
+  background: var(--bg-dark);
+  border-top: 1px solid var(--border-dark);
+  padding: 28px 0;
+  color: var(--text-light-muted);
+  font-size: 0.85rem;
+}
+
+.site-footer__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.site-footer__brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.site-footer__tagline {
+  font-family: var(--font-display);
+  font-style: italic;
+  color: var(--purple-light);
+}
+
+/* ==========================================================================
+   ANIMACIONES SUAVES DE ENTRADA
+   ========================================================================== */
+.fade-up {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-up.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ==========================================================================
+   RESPONSIVE GLOBAL
+   ========================================================================== */
+@media (max-width: 860px) {
+  .navbar__burger {
+    display: flex;
+  }
+
+  .navbar__menu {
+    position: fixed;
+    top: var(--nav-height);
+    left: 0;
+    right: 0;
+    background: rgba(20, 18, 24, 0.98);
+    backdrop-filter: blur(18px);
+    flex-direction: column;
+    padding: 28px 24px 36px;
+    gap: 20px;
+    border-bottom: 1px solid var(--border-dark);
+    transform: translateY(-130%);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.32s ease, opacity 0.32s ease;
+  }
+
+  .navbar__menu.is-open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .navbar__link {
+    font-size: 1.05rem;
+  }
+}

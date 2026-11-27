@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio de proyectos de diseño gráfico de Luisa: Branding, Editorial, Ilustración, Fotografía, UI/UX y Publicidad.">
+  <title>Portafolio | Lp — Luisa Diseño Gráfico</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/portafolio.css">
+</head>
+<body>
+  <!-- Navegación -->
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo" aria-label="Lp Inicio">L<span>p</span></a>
+
+      <nav class="navbar__menu" aria-label="Menú principal">
+        <a href="index.html" class="navbar__link">Inicio</a>
+        <a href="portafolio.html" class="navbar__link active">Portafolio</a>
+        <a href="sobre-mi.html" class="navbar__link">Sobre mí</a>
+        <a href="servicios.html" class="navbar__link">Servicios</a>
+        <a href="contacto.html" class="navbar__link">Contacto</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <button class="theme-toggle" type="button" aria-label="Cambiar contraste del tema">
+          <span class="theme-toggle__stars" aria-hidden="true">✦·</span>
+          <span class="theme-toggle__orb" aria-hidden="true"></span>
+        </button>
+        <button class="navbar__burger" type="button" aria-label="Abrir menú" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Encabezado con collage de escultura clásica -->
+    <section class="portfolio-hero">
+      <div class="container portfolio-hero__grid">
+        <div class="portfolio-hero__text fade-up">
+          <h1 class="portfolio-hero__title">Portafolio</h1>
+          <p class="portfolio-hero__subtitle">
+            Una selección de proyectos donde el diseño cobra vida.
+          </p>
+        </div>
+
+        <div class="portfolio-hero__collage fade-up" aria-hidden="true">
+          <div class="bust-shard bust-shard--1"></div>
+          <div class="bust-shard bust-shard--2"></div>
+          <div class="bust-halftone halftone-dots"></div>
+          <svg class="bust-star" viewBox="0 0 64 64" fill="none">
+            <path d="M32 4V60M4 32H60M12 12L52 52M52 12L12 52" stroke="#A9433B" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+          <div class="bust-frame">
+            <img src="assets/img/statue-bust.jpg" alt="Busto clásico en collage gráfico">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Buscador y filtros dinámicos -->
+    <section class="portfolio-controls">
+      <div class="container">
+        <div class="search-box">
+          <svg class="search-box__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="11" cy="11" r="7"/>
+            <path d="M20 20l-3.5-3.5"/>
+          </svg>
+          <input
+            type="search"
+            id="portfolio-search"
+            class="search-box__input"
+            placeholder="Buscar proyectos..."
+            aria-label="Buscar proyectos"
+          >
+        </div>
+
+        <div class="filter-bar" role="tablist" aria-label="Filtrar proyectos por categoría">
+          <button class="filter-pill active" type="button" data-filter="todos">Todos</button>
+          <button class="filter-pill" type="button" data-filter="branding">Branding</button>
+          <button class="filter-pill" type="button" data-filter="editorial">Editorial</button>
+          <button class="filter-pill" type="button" data-filter="ilustracion">Ilustración</button>
+          <button class="filter-pill" type="button" data-filter="fotografia">Fotografía</button>
+          <button class="filter-pill" type="button" data-filter="ui/ux">UI / UX</button>
+          <button class="filter-pill" type="button" data-filter="publicidad">Más ⌄</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galería 3x3 -->
+    <section class="portfolio-gallery">
+      <div class="container">
+        <div class="gallery-grid">
+          <!-- 1. Trendy -->
+          <a href="proyecto.html" class="project-card project-card--trendy fade-up" data-category="branding" data-title="Trendy Identidad Visual">
+            <div class="project-card__visual">
+              <div class="art-trendy">
+                <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+                  <path d="M14 20C14 15.5 17.5 12 22 12H50C52 12 52 20 48 20H37V48C37 52 27 52 27 48V20H22C17.5 20 14 24 14 20Z" fill="#FFFFFF"/>
+                </svg>
+                <span>Trendy</span>
+              </div>
+            </div>
+            <div class="project-card__hover">
+              <span class="project-card__cat">Branding</span>
+              <h3>Trendy</h3>
+            </div>
+          </a>
+
+          <!-- 2. Historias de Barrio -->
+          <a href="historias-de-barrio.html" class="project-card project-card--barrio fade-up" data-category="editorial fotografia" data-title="Historias de Barrio Editorial">
+            <div class="project-card__visual">
+              <div class="art-barrio">
+                <img src="assets/img/historias-de-barrio/logo-historias-de-barrio.png" alt="Logo Historias de Barrio" class="art-barrio__logo">
+                <div class="art-barrio__overlay">
+                  <small>EDICIÓN ESPECIAL</small>
+                  <strong>HISTORIAS DE BARRIO</strong>
+                </div>
+              </div>
+            </div>
+            <div class="project-card__hover">
+              <span class="project-card__cat">Editorial</span>
+              <h3>Historias de Barrio</h3>
+            </div>
+          </a>
+
+          <!-- 3. Chigüi en el reino de los susurros -->
+          <a href="proyecto.html" class="project-card project-card--chigui fade-up" data-category="ilustracion" data-title="Chigüi en el reino de los susurros Videojuego Concept Art">
+            <div class="project-card__visual">
+              <img src="assets/img/chigui-hero.jpg" alt="Chigüi en el reino de los susurros">
+              <div class="art-chigui-label">
+                <strong>Chigüi</strong>
+                <span>en el reino de los susurros</span>
+              </div>
+            </div>
+            <div class="project-card__hover">
+              <span class="project-card__cat">Ilustración · Concept Art</span>
+              <h3>Chigüi — Ver caso de estudio →</h3>
+            </div>
+          </a>
+
+          <!-- 4. D'UNIVERSE COLORS -->
+          <a href="https://acos71537-stack.github.io/duniversecolors/" target="_blank" rel="noopener noreferrer" class="project-card project-card--duniverse fade-up" data-category="fotografia publicidad" data-title="D'Universe Colors Campaña Publicitaria">
+            <div class="project-card__visual">
+              <div class="art-duniverse">
+                <span class="art-duniverse__title">D'UNIVERSE<br>COLORS</span>
+                <div class="art-bottles" aria-hidden="true">
+                  <span class="bottle bottle--1"></span>
+                  <span class="bottle bottle--2"></span>
+                  <span class="bottle bottle--3"></span>
+                </div>
+              </div>
+            </div>
+            <div class="project-card__hover">
+              <span class="project-card__cat">Publicidad · Fotografía</span>
+              <h3>D'Universe Colors</h3>
+            </div>
+          </a>
+
+          <!-- 5. Imprit -->
+          <a href="https://heyzine.com/flip-book/b56f3ecf0d.html" target="_blank" rel="noopener noreferrer" class="project-card project-card--ui fade-up" data-category="editorial" data-title="Imprit">
+            <div class="project-card__visual">
+              <div class="art-laptop">
+                <div class="laptop-screen">
+                  <div class="laptop-topbar"><span></span><span></span><span></span></div>
+                  <div class="laptop-grid">
+                    <div class="laptop-box laptop-box--accent"></div>
+                    <div class="laptop-box"></div>
+                    <div class="laptop-box"></div>
+                    <div class="laptop-box laptop-box--wide"></div>
+                  </div>
+                </div>
+                <div class="laptop-base"></div>
+              </div>
+            </div>
+            <div class="project-card__hover">
+              <span class="project-card__cat">Editorial</span>
+              <h3>Imprit</h3>
+            </div>
+          </a>
+
+          <!-- 6. HUMANS OF NY -->
+          <a href="proyecto.html" class="project-card project-card--hony fade-up" data-category="branding editorial" data-title="Humans of NY Merchandising Tote Bag">
+            <div class="project-card__visual">
+              <div class="art-tote">
+                <div class="tote-handles" aria-hidden="true"></div>
+                <div class="tote-body">
+                  <span>HUMANS<br>OF NY</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-card__hover">
+              <span class="project-card__cat">Branding · Packaging</span>
+              <h3>Humans of NY</h3>
+            </div>
+          </a>
+
+          <!-- 7. Fotografía Botánica B&W -->
+          <a href="proyecto.html" class="project-card project-card--botanical fade-up" data-category="fotografia" data-title="Estudio Botánico Fotografía Blanco y Negro">
+            <div class="project-card__visual">
+              <div class="art-botanical">
+                <div class="botanical-window"></div>
+                <svg viewBox="0 0 120 140" fill="none" aria-hidden="true">
+                  <path d="M40 96H80L73 132H47L40 96Z" fill="#232026"/>
+                  <path d="M60 96C58 72 45 50 28 36M60 96C62 66 72 42 94 28M60 96C60 66 56 38 62 16M60 96C48 76 34 66 20 62M60 96C72 74 86 64 102 58" stroke="#18161C" stroke-width="4" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="project-card__hover">
+              <span class="project-card__cat">Fotografía</span>
+              <h3>Luz y Silencio — Serie B&amp;N</h3>
+            </div>
+          </a>
+
+          <!-- 8. MORTAL KOMBAT -->
+          <a href="proyecto.html" class="project-card project-card--mk fade-up" data-category="ilustracion branding" data-title="Mortal Kombat Emblema Ilustración">
+            <div class="project-card__visual">
+              <div class="art-mk">
+                <div class="mk-emblem">
+                  <svg viewBox="0 0 80 80" fill="none" aria-hidden="true">
+                    <circle cx="40" cy="40" r="32" stroke="#F59E0B" stroke-width="3.5"/>
+                    <path d="M27 52C26 37 36 22 52 24C44 30 43 37 51 42C44 43 40 48 44 56C35 58 29 56 27 52Z" fill="#F59E0B"/>
+                  </svg>
+                </div>
+                <strong>MORTAL KOMBAT</strong>
+              </div>
+            </div>
+            <div class="project-card__hover">
+              <span class="project-card__cat">Ilustración · Poster</span>
+              <h3>Mortal Kombat Tribute</h3>
+            </div>
+          </a>
+
+          <!-- 9. ODS Salud -->
+          <a href="proyecto.html" class="project-card project-card--ods fade-up" data-category="editorial publicidad" data-title="ODS Salud Campaña Social">
+            <div class="project-card__visual">
+              <div class="art-ods">
+                <div class="ods-text">
+                  <strong>ODS</strong>
+                  <span>Salud</span>
+                </div>
+                <svg class="ods-heart" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+                  <path d="M32 54S8 40 8 22C8 14 14 8 21.5 8C26 8 29.8 10.4 32 14C34.2 10.4 38 8 42.5 8C50 8 56 14 56 22C56 40 32 54 32 54Z" fill="#FFFFFF" fill-opacity="0.92"/>
+                  <path d="M18 30H26L29 22L34 38L38 28H46" stroke="#0E9AA7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="project-card__hover">
+              <span class="project-card__cat">Campaña Social · Editorial</span>
+              <h3>ODS Salud y Bienestar</h3>
+            </div>
+          </a>
+        </div>
+
+        <p id="portfolio-empty" class="portfolio-empty" hidden>
+          No se encontraron proyectos con ese criterio. Prueba con otra palabra o categoría.
+        </p>
+
+        <!-- Paginación -->
+        <nav class="pagination" aria-label="Paginación de proyectos">
+          <a href="#top" class="page-btn active" aria-current="page">1</a>
+          <a href="#top" class="page-btn">2</a>
+          <a href="#top" class="page-btn">3</a>
+          <span class="page-dots">…</span>
+          <a href="#top" class="page-btn" aria-label="Página siguiente">›</a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__brand">
+        <span class="navbar__logo" style="font-size:1.35rem;">L<span>p</span></span>
+        <span>© 2026 Luisa · Diseño Gráfico</span>
+      </div>
+      <span class="site-footer__tagline">Diseño que inspira ✦</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

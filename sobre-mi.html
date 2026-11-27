@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conoce a Luisa, diseñadora gráfica especializada en branding, ilustración, diseño editorial, UI/UX y fotografía.">
+  <title>Sobre mí | Lp — Luisa Diseño Gráfico</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/sobre-mi.css">
+</head>
+<body>
+  <!-- Navegación -->
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo" aria-label="Lp Inicio">L<span>p</span></a>
+
+      <nav class="navbar__menu" aria-label="Menú principal">
+        <a href="index.html" class="navbar__link">Inicio</a>
+        <a href="portafolio.html" class="navbar__link">Portafolio</a>
+        <a href="sobre-mi.html" class="navbar__link active">Sobre mí</a>
+        <a href="servicios.html" class="navbar__link">Servicios</a>
+        <a href="contacto.html" class="navbar__link">Contacto</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <button class="theme-toggle" type="button" aria-label="Cambiar contraste del tema">
+          <span class="theme-toggle__stars" aria-hidden="true">✦·</span>
+          <span class="theme-toggle__orb" aria-hidden="true"></span>
+        </button>
+        <button class="navbar__burger" type="button" aria-label="Abrir menú" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="about-stage">
+      <div class="about-card">
+        <!-- Decoraciones de collage en bordes -->
+        <div class="about-deco about-deco--shard-left" aria-hidden="true"></div>
+        <div class="about-deco about-deco--shard-bottom" aria-hidden="true"></div>
+        <div class="about-deco about-deco--halftone halftone-dots--dark" aria-hidden="true"></div>
+
+        <div class="container about-grid">
+          <!-- Columna 1: Bio -->
+          <div class="about-bio fade-up">
+            <h1 class="about-bio__title">Sobre mí</h1>
+            <p class="about-bio__lead">Diseño con propósito.</p>
+            <p class="about-bio__text">
+              Soy Luisa, una diseñadora gráfica apasionada por contar historias a través del diseño.
+              Me encanta crear experiencias visuales que conecten, explorar nuevas ideas y aprender
+              siempre algo nuevo.
+            </p>
+          </div>
+
+          <!-- Columna 2: Retrato collage -->
+          <div class="about-portrait fade-up">
+            <div class="about-portrait__shard about-portrait__shard--1" aria-hidden="true"></div>
+            <div class="about-portrait__shard about-portrait__shard--2" aria-hidden="true"></div>
+            <div class="about-portrait__frame">
+              <img src="assets/img/sobre-mi-foto.jpg" alt="Retrato de Luisa, diseñadora gráfica">
+            </div>
+            <svg class="about-portrait__star" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <path d="M16 0L19.5 12.5L32 16L19.5 19.5L16 32L12.5 19.5L0 16L12.5 12.5L16 0Z" fill="#A9433B"/>
+            </svg>
+          </div>
+
+          <!-- Columna 3: Habilidades y herramientas -->
+          <div class="about-skills fade-up">
+            <h2 class="about-skills__heading">Mis habilidades</h2>
+
+            <ul class="skills-list">
+              <li class="skill-item">
+                <div class="skill-item__head">
+                  <span>Branding</span>
+                  <span>95%</span>
+                </div>
+                <div class="skill-bar"><span style="width: 95%;"></span></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-item__head">
+                  <span>Ilustración</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-bar"><span style="width: 90%;"></span></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-item__head">
+                  <span>Diseño Editorial</span>
+                  <span>92%</span>
+                </div>
+                <div class="skill-bar"><span style="width: 92%;"></span></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-item__head">
+                  <span>UI / UX</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-bar"><span style="width: 85%;"></span></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-item__head">
+                  <span>Fotografía</span>
+                  <span>80%</span>
+                </div>
+                <div class="skill-bar"><span style="width: 80%;"></span></div>
+              </li>
+            </ul>
+
+            <div class="about-tools">
+              <h3>Herramientas</h3>
+              <div class="tool-icons" aria-label="Programas de diseño">
+                <span class="app-tile app-tile--ps" title="Adobe Photoshop">Ps</span>
+                <span class="app-tile app-tile--ai" title="Adobe Illustrator">Ai</span>
+                <span class="app-tile app-tile--id" title="Adobe InDesign">Id</span>
+                <span class="app-tile app-tile--fg" title="Figma">Fg</span>
+                <span class="app-tile app-tile--bl" title="Blender / 3D">3D</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__brand">
+        <span class="navbar__logo" style="font-size:1.35rem;">L<span>p</span></span>
+        <span>© 2026 Luisa · Diseño Gráfico</span>
+      </div>
+      <span class="site-footer__tagline">Diseño que inspira ✦</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

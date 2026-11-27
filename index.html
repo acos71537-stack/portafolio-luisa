@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio de Luisa — Diseño gráfico que cuenta historias. Branding, Editorial, Ilustración, Fotografía, UI/UX y Publicidad.">
+  <title>Inicio | Lp — Luisa Diseño Gráfico</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/inicio.css">
+</head>
+<body>
+  <!-- Navegación -->
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo" aria-label="Lp Inicio">L<span>p</span></a>
+
+      <nav class="navbar__menu" aria-label="Menú principal">
+        <a href="index.html" class="navbar__link active">Inicio</a>
+        <a href="portafolio.html" class="navbar__link">Portafolio</a>
+        <a href="sobre-mi.html" class="navbar__link">Sobre mí</a>
+        <a href="servicios.html" class="navbar__link">Servicios</a>
+        <a href="contacto.html" class="navbar__link">Contacto</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <button class="theme-toggle" type="button" aria-label="Cambiar contraste del tema">
+          <span class="theme-toggle__stars" aria-hidden="true">✦·</span>
+          <span class="theme-toggle__orb" aria-hidden="true"></span>
+        </button>
+        <button class="navbar__burger" type="button" aria-label="Abrir menú" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. HERO -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content fade-up">
+          <h1 class="hero__title">
+            Diseño<br>
+            que cuenta<br>
+            <span class="hero__accent">historias</span>
+          </h1>
+          <p class="hero__subtitle">
+            Ideas visuales que conectan, inspiran y dejan huella.
+          </p>
+          <a href="portafolio.html" class="btn btn--cream">
+            Explorar portafolio
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <div class="hero__visual fade-up" aria-hidden="true">
+          <!-- Formas geométricas y halftone -->
+          <div class="hero__shard hero__shard--top"></div>
+          <div class="hero__shard hero__shard--left"></div>
+          <div class="hero__shard hero__shard--right"></div>
+          <div class="hero__halftone halftone-dots"></div>
+
+          <!-- Corona dibujada a mano (trazo manual del sistema de diseño) -->
+          <svg class="hero__crown" viewBox="0 0 110 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 60L6 20L34 40L56 10L74 40L102 18L94 60C68 66 38 66 12 60Z" stroke="#191615" stroke-width="4" stroke-linejoin="round"/>
+            <path d="M15 58L9 22L35 41L56 13L73 41L99 20L92 58" stroke="#A9433B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+
+          <!-- Ilustración principal (lart) -->
+          <div class="hero__portrait-frame">
+            <img src="assets/img/lart.png" alt="Ilustración de Luisa saludando" class="hero__portrait">
+          </div>
+
+          <!-- Destellos -->
+          <svg class="hero__sparkle hero__sparkle--1" viewBox="0 0 28 28" fill="none">
+            <path d="M14 0L17 11L28 14L17 17L14 28L11 17L0 14L11 11L14 0Z" fill="#E9D8C4"/>
+          </svg>
+          <svg class="hero__sparkle hero__sparkle--2" viewBox="0 0 24 24" fill="none">
+            <path d="M12 0L14.5 9.5L24 12L14.5 14.5L12 24L9.5 14.5L0 12L9.5 9.5L12 0Z" fill="#D16C69"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. PRESENTACIÓN CREMA ("Hola, soy Luisa") -->
+    <section class="intro-band">
+      <div class="container intro-band__grid">
+        <div class="intro-band__text fade-up">
+          <h2 class="intro-band__heading">
+            <svg class="intro-band__star" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <path d="M16 2V30M2 16H30M6 6L26 26M26 6L6 26" stroke="#A9433B" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+            Hola, soy Luisa
+          </h2>
+          <p class="intro-band__desc">
+            Diseñadora gráfica apasionada por crear soluciones visuales con propósito.
+          </p>
+          <a href="sobre-mi.html" class="intro-band__link">
+            Conoce más sobre mí <span aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <!-- Ilustración del gatito negro asomándose sobre textura morada halftone -->
+        <div class="intro-band__cat fade-up" aria-hidden="true">
+          <div class="cat-block halftone-dots"></div>
+          <svg class="cat-svg" viewBox="0 0 260 155" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Destellos decorativos -->
+            <path d="M35 38L48 48M42 22L48 36M22 54L38 56" stroke="#191615" stroke-width="3" stroke-linecap="round"/>
+            <path d="M214 26L218 36L228 40L218 44L214 54L210 44L200 40L210 36L214 26Z" fill="#191615"/>
+            <circle cx="195" cy="24" r="2.5" fill="#A9433B"/>
+            <circle cx="234" cy="60" r="2.5" fill="#191615"/>
+            <!-- Cabeza y orejas del gato negro -->
+            <path d="M78 128C74 96 82 68 95 56L84 22L117 44C128 40 142 40 154 44L185 24L174 58C188 70 194 98 190 128H78Z" fill="#191615"/>
+            <!-- Orejas interiores -->
+            <path d="M93 36L108 46L96 55L93 36Z" fill="#E9D8C4"/>
+            <path d="M175 38L161 48L172 56L175 38Z" fill="#E9D8C4"/>
+            <!-- Ojos -->
+            <ellipse cx="116" cy="84" rx="8.5" ry="9.5" fill="#E9D8C4"/>
+            <ellipse cx="152" cy="84" rx="8.5" ry="9.5" fill="#E9D8C4"/>
+            <circle cx="118" cy="84" r="4.5" fill="#191615"/>
+            <circle cx="150" cy="84" r="4.5" fill="#191615"/>
+            <circle cx="115" cy="81" r="2" fill="#FFFFFF"/>
+            <circle cx="147" cy="81" r="2" fill="#FFFFFF"/>
+            <!-- Nariz y boquita -->
+            <path d="M130 95L134 99L138 95H130Z" fill="#D16C69"/>
+            <path d="M126 102C129 106 133 105 134 101C135 105 139 106 142 102" stroke="#E9D8C4" stroke-width="2" stroke-linecap="round"/>
+            <!-- Bigotes -->
+            <path d="M92 92L66 88M92 99L65 102M176 92L202 88M176 99L203 102" stroke="#E9D8C4" stroke-width="2" stroke-linecap="round"/>
+            <!-- Patitas apoyadas -->
+            <ellipse cx="96" cy="126" rx="16" ry="11" fill="#191615" stroke="#E9D8C4" stroke-width="2"/>
+            <ellipse cx="174" cy="126" rx="16" ry="11" fill="#191615" stroke="#E9D8C4" stroke-width="2"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. PROYECTOS DESTACADOS -->
+    <section class="featured">
+      <div class="container">
+        <div class="featured__header fade-up">
+          <h2 class="featured__title">Proyectos destacados</h2>
+          <a href="portafolio.html" class="featured__all">
+            Ver todo el portafolio <span aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <div class="featured__grid">
+          <!-- Card 1: Trendy -->
+          <a href="portafolio.html" class="feat-card feat-card--trendy fade-up">
+            <div class="feat-card__art">
+              <div class="trendy-badge">
+                <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+                  <path d="M14 20C14 15.5 17.5 12 22 12H50C52 12 52 20 48 20H37V48C37 52 27 52 27 48V20H22C17.5 20 14 24 14 20Z" fill="#FFFFFF"/>
+                </svg>
+                <span class="trendy-name">Trendy</span>
+              </div>
+            </div>
+            <div class="feat-card__meta">
+              <span class="feat-card__tag">Branding</span>
+              <h3>Identidad Trendy</h3>
+            </div>
+          </a>
+
+          <!-- Card 2: Historias de Barrio -->
+          <a href="historias-de-barrio.html" class="feat-card feat-card--barrio fade-up">
+            <div class="feat-card__art">
+              <div class="barrio-poster">
+                <img src="assets/img/historias-de-barrio/logo-historias-de-barrio.png" alt="Logo Historias de Barrio" class="barrio-logo">
+              </div>
+            </div>
+            <div class="feat-card__meta">
+              <span class="feat-card__tag">Editorial</span>
+              <h3>Historias de Barrio</h3>
+            </div>
+          </a>
+
+          <!-- Card 3: Chigüi -->
+          <a href="proyecto.html" class="feat-card feat-card--chigui fade-up">
+            <div class="feat-card__art">
+              <img src="assets/img/chigui-hero.jpg" alt="Chigüi en el reino de los susurros — Concept Art">
+              <div class="chigui-overlay">
+                <strong class="chigui-logo">Chigüi</strong>
+                <span class="chigui-sub">en el reino de los susurros</span>
+              </div>
+            </div>
+            <div class="feat-card__meta">
+              <span class="feat-card__tag">Ilustración · Videojuego</span>
+              <h3>Chigüi en el reino de los susurros</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. CTA INFERIOR + REDES -->
+    <section class="cta-strip">
+      <div class="container cta-strip__inner">
+        <div class="cta-strip__left">
+          <a href="contacto.html" class="cta-strip__question">
+            ¿Tienes un proyecto en mente?
+            <span class="cta-strip__arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <div class="cta-strip__right">
+          <div class="social-links" aria-label="Redes sociales de Luisa">
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Behance">
+              <span style="font-weight:700;font-size:0.82rem;letter-spacing:-0.03em;">Bē</span>
+            </a>
+            <a href="#" class="social-link" aria-label="Dribbble">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="4"/><polygon points="10,9 15,12 10,15" fill="currentColor" stroke="none"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__brand">
+        <span class="navbar__logo" style="font-size:1.35rem;">L<span>p</span></span>
+        <span>© 2026 Luisa · Diseño Gráfico</span>
+      </div>
+      <span class="site-footer__tagline">Diseño que inspira ✦</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
