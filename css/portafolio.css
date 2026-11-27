@@ -522,7 +522,21 @@
   color: #1A1622;
 }
 
-/* 7. Botánica B&W */
+/* 7. Exploración fotográfica (Portada) */
+.art-foto-cover {
+  width: 100%;
+  height: 100%;
+  background: #191615;
+}
+
+.art-foto-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 35%;
+}
+
+/* 7b. Botánica B&W (legacy) */
 .art-botanical {
   width: 100%;
   height: 100%;
