@@ -337,7 +337,27 @@
   color: var(--bg-cream);
 }
 
-/* 4. D'UNIVERSE COLORS */
+/* 4. D'UNIVERSE COLORS (Portada D) */
+.art-duniverse-cover {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, #F4ECFA 0%, #E2D2F0 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.art-duniverse-cover img {
+  max-width: 88%;
+  max-height: 88%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+/* 4b. D'UNIVERSE COLORS (legacy) */
 .art-duniverse {
   width: 100%;
   height: 100%;
@@ -528,28 +548,18 @@
   z-index: 2;
 }
 
-/* 8. Mortal Kombat */
-.art-mk {
+/* 8. Exploraciones tipográficas */
+.art-typo-cover {
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle at 50% 42%, #7C2D12 0%, #1C0A05 68%, #090504 100%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+  background: #191615;
 }
 
-.mk-emblem svg {
-  width: 78px;
-  filter: drop-shadow(0 0 14px rgba(245, 158, 11, 0.5));
-}
-
-.art-mk strong {
-  font-family: var(--font-display);
-  font-size: 1rem;
-  letter-spacing: 0.16em;
-  color: #FDE68A;
+.art-typo-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
 }
 
 /* 9. ODS Salud */
