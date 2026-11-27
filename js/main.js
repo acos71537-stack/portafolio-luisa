@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initPortfolioFilters();
   initContactForm();
   initVideoModal();
+  initAlmaCarousel();
 });
 
 /* 1. Menú móvil */
@@ -166,5 +167,40 @@ function initVideoModal() {
       label.classList.add('show');
       setTimeout(() => label.classList.remove('show'), 2800);
     }
+  });
+}
+
+/* 7. Galería interactiva 1 en 1 en alma.html */
+function initAlmaCarousel() {
+  const carousel = document.getElementById('alma-carousel');
+  if (!carousel) return;
+
+  const slides = carousel.querySelectorAll('.alma-slide');
+  const prevBtn = carousel.querySelector('.alma-carousel__btn--prev');
+  const nextBtn = carousel.querySelector('.alma-carousel__btn--next');
+  const dots = document.querySelectorAll('.alma-dot');
+  const caption = document.getElementById('alma-caption');
+  const counter = document.getElementById('alma-counter');
+
+  let current = 0;
+
+  function showSlide(index) {
+    current = (index + slides.length) % slides.length;
+    slides.forEach((s, i) => s.classList.toggle('is-active', i === current));
+    dots.forEach((d, i) => d.classList.toggle('is-active', i === current));
+
+    if (caption) caption.textContent = slides[current].dataset.caption || '';
+    if (counter) counter.textContent = `${current + 1} / ${slides.length}`;
+  }
+
+  prevBtn?.addEventListener('click', () => showSlide(current - 1));
+  nextBtn?.addEventListener('click', () => showSlide(current + 1));
+  dots.forEach((dot) => {
+    dot.addEventListener('click', () => showSlide(Number(dot.dataset.index)));
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') showSlide(current - 1);
+    if (e.key === 'ArrowRight') showSlide(current + 1);
   });
 }

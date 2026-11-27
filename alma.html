@@ -83,65 +83,88 @@
           </div>
         </div>
 
-        <!-- Objetivo / Concepto / Resultado -->
-        <div class="alma-pillars fade-up">
-          <article class="alma-pillar">
-            <span class="alma-pillar__num" aria-hidden="true">01</span>
-            <h3>Objetivo</h3>
-            <p>
-              Facilitar el acceso rápido y confiable a espacios seguros y actividades pensadas para
-              la primera infancia, reduciendo la fricción al planear salidas y controles de salud en
-              la ciudad.
-            </p>
-          </article>
+        <!-- Galería 1 en 1 a la izquierda + Objetivo / Concepto / Resultado a la derecha -->
+        <div class="alma-showcase fade-up">
+          <!-- Columna izquierda: Galería interactiva 1 en 1 -->
+          <div class="alma-gallery-col">
+            <div class="alma-section__head">
+              <h2>Interfaz de la aplicación</h2>
+              <p>Explora las pantallas de ALMA una por una.</p>
+            </div>
 
-          <article class="alma-pillar">
-            <span class="alma-pillar__num" aria-hidden="true">02</span>
-            <h3>Concepto</h3>
-            <p>
-              Una interfaz cálida, cercana y fácil de recorrer con una sola mano, organizada en
-              categorías visuales (Niños, Salud, Parques y Actividades), recomendaciones
-              personalizadas, búsqueda inteligente y mapa geolocalizado.
-            </p>
-          </article>
+            <div class="alma-carousel" id="alma-carousel" aria-label="Galería de pantallas de ALMA">
+              <button type="button" class="alma-carousel__btn alma-carousel__btn--prev" aria-label="Pantalla anterior">‹</button>
 
-          <article class="alma-pillar">
-            <span class="alma-pillar__num" aria-hidden="true">03</span>
-            <h3>Resultado</h3>
-            <p>
-              Aplicación funcional compilada para Android con flujo completo: inicio de sesión,
-              registro, inicio personalizado, buscador de actividades, mapa interactivo con sitios
-              emblemáticos de Bogotá, agenda familiar y gestión de perfil.
-            </p>
-          </article>
-        </div>
+              <div class="alma-carousel__stage">
+                <figure class="alma-slide is-active" data-caption="Bienvenida e inicio de sesión">
+                  <img src="assets/img/alma/alma-2.jpeg" alt="ALMA — Pantalla de bienvenida e inicio de sesión">
+                </figure>
+                <figure class="alma-slide" data-caption="Inicio con actividades recomendadas">
+                  <img src="assets/img/alma/alma-1.jpeg" alt="ALMA — Inicio con actividades recomendadas">
+                </figure>
+                <figure class="alma-slide" data-caption="Exploración y detalle de espacios">
+                  <img src="assets/img/alma/alma-3.jpeg" alt="ALMA — Exploración y detalle de espacios">
+                </figure>
+                <figure class="alma-slide" data-caption="Mapa interactivo y lugares cercanos">
+                  <img src="assets/img/alma/alma-4.jpeg" alt="ALMA — Mapa interactivo y lugares cercanos">
+                </figure>
+                <figure class="alma-slide" data-caption="Agenda familiar y organización">
+                  <img src="assets/img/alma/alma-5.jpeg" alt="ALMA — Agenda familiar y organización">
+                </figure>
+                <figure class="alma-slide" data-caption="Perfil y personalización">
+                  <img src="assets/img/alma/alma-6.jpeg" alt="ALMA — Perfil y personalización">
+                </figure>
+              </div>
 
-        <!-- Galería de pantallas de la app -->
-        <div class="alma-section fade-up">
-          <div class="alma-section__head">
-            <h2>Interfaz y pantallas de la aplicación</h2>
-            <p>Recorrido visual por el diseño de experiencia de usuario y las vistas principales de ALMA.</p>
+              <button type="button" class="alma-carousel__btn alma-carousel__btn--next" aria-label="Pantalla siguiente">›</button>
+            </div>
+
+            <div class="alma-carousel__footer">
+              <span class="alma-carousel__caption" id="alma-caption">Bienvenida e inicio de sesión</span>
+              <span class="alma-carousel__counter" id="alma-counter">1 / 6</span>
+            </div>
+
+            <div class="alma-carousel__dots" role="tablist" aria-label="Seleccionar pantalla">
+              <button type="button" class="alma-dot is-active" data-index="0" aria-label="Ir a pantalla 1"></button>
+              <button type="button" class="alma-dot" data-index="1" aria-label="Ir a pantalla 2"></button>
+              <button type="button" class="alma-dot" data-index="2" aria-label="Ir a pantalla 3"></button>
+              <button type="button" class="alma-dot" data-index="3" aria-label="Ir a pantalla 4"></button>
+              <button type="button" class="alma-dot" data-index="4" aria-label="Ir a pantalla 5"></button>
+              <button type="button" class="alma-dot" data-index="5" aria-label="Ir a pantalla 6"></button>
+            </div>
           </div>
 
-          <div class="alma-screens-grid">
-            <figure class="alma-screen">
-              <img src="assets/img/alma/alma-2.jpeg" alt="ALMA — Pantalla de bienvenida e inicio de sesión" loading="lazy">
-            </figure>
-            <figure class="alma-screen">
-              <img src="assets/img/alma/alma-1.jpeg" alt="ALMA — Inicio con actividades recomendadas" loading="lazy">
-            </figure>
-            <figure class="alma-screen">
-              <img src="assets/img/alma/alma-3.jpeg" alt="ALMA — Vista de funcionalidades 3" loading="lazy">
-            </figure>
-            <figure class="alma-screen">
-              <img src="assets/img/alma/alma-4.jpeg" alt="ALMA — Vista de funcionalidades 4" loading="lazy">
-            </figure>
-            <figure class="alma-screen">
-              <img src="assets/img/alma/alma-5.jpeg" alt="ALMA — Vista de funcionalidades 5" loading="lazy">
-            </figure>
-            <figure class="alma-screen">
-              <img src="assets/img/alma/alma-6.jpeg" alt="ALMA — Vista de funcionalidades 6" loading="lazy">
-            </figure>
+          <!-- Columna derecha: Objetivo / Concepto / Resultado -->
+          <div class="alma-pillars">
+            <article class="alma-pillar">
+              <span class="alma-pillar__num" aria-hidden="true">01</span>
+              <h3>Objetivo</h3>
+              <p>
+                Facilitar el acceso rápido y confiable a espacios seguros y actividades pensadas para
+                la primera infancia, reduciendo la fricción al planear salidas y controles de salud en
+                la ciudad.
+              </p>
+            </article>
+
+            <article class="alma-pillar">
+              <span class="alma-pillar__num" aria-hidden="true">02</span>
+              <h3>Concepto</h3>
+              <p>
+                Una interfaz cálida, cercana y fácil de recorrer con una sola mano, organizada en
+                categorías visuales (Niños, Salud, Parques y Actividades), recomendaciones
+                personalizadas, búsqueda inteligente y mapa geolocalizado.
+              </p>
+            </article>
+
+            <article class="alma-pillar">
+              <span class="alma-pillar__num" aria-hidden="true">03</span>
+              <h3>Resultado</h3>
+              <p>
+                Aplicación funcional compilada para Android con flujo completo: inicio de sesión,
+                registro, inicio personalizado, buscador de actividades, mapa interactivo con sitios
+                emblemáticos de Bogotá, agenda familiar y gestión de perfil.
+              </p>
+            </article>
           </div>
         </div>
 
