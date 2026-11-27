@@ -358,28 +358,43 @@
 }
 
 /* Artes individuales de tarjetas destacadas */
-.feat-card--trendy .feat-card__art {
-  background: radial-gradient(circle at 25% 20%, #B17CFF 0%, #7C3AED 55%, #551EC4 100%);
+.feat-card--alma .feat-card__art {
+  background: linear-gradient(135deg, #2A211F 0%, #75534B 55%, #A9433B 100%);
 }
 
-.trendy-badge {
+.alma-card-art {
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 6px;
+  justify-content: center;
+  gap: 14px;
+  padding: 18px;
 }
 
-.trendy-badge svg {
-  width: 58px;
-  height: 58px;
+.alma-card-art__img {
+  height: 92%;
+  width: auto;
+  border-radius: 14px;
+  border: 3px solid #191615;
+  box-shadow: 0 12px 26px rgba(25, 22, 21, 0.45);
+  transition: transform 0.4s ease;
 }
 
-.trendy-name {
-  font-family: var(--font-body);
-  font-size: 1.7rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  color: #ffffff;
+.alma-card-art__img--left {
+  transform: rotate(-4deg);
+}
+
+.alma-card-art__img--right {
+  transform: rotate(4deg);
+}
+
+.feat-card--alma:hover .alma-card-art__img--left {
+  transform: rotate(-6deg) translateY(-4px);
+}
+
+.feat-card--alma:hover .alma-card-art__img--right {
+  transform: rotate(6deg) translateY(-4px);
 }
 
 .feat-card--barrio .feat-card__art {

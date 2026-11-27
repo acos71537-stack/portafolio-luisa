@@ -1,0 +1,302 @@
+/* ==========================================================================
+   ALMA.CSS — Estilos exclusivos para alma.html (Caso de Estudio App ALMA)
+   Paleta: #191615, #A9433B, #D16C69, #E9D8C4, #75534B, #B8A99B
+   ========================================================================== */
+
+/* 1. HERO OSCURO */
+.alma-hero {
+  background: linear-gradient(125deg, #191615 0%, #261D1B 60%, #3A2320 100%);
+  padding: 56px 0 84px;
+  overflow: hidden;
+}
+
+.alma-hero__grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  gap: 44px;
+}
+
+.alma-hero__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: #E9D8C4;
+  opacity: 0.88;
+  margin-bottom: 24px;
+}
+
+.alma-hero__back:hover {
+  opacity: 1;
+  color: #D16C69;
+  transform: translateX(-4px);
+}
+
+.alma-hero__kicker {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #D16C69;
+  margin-bottom: 10px;
+}
+
+.alma-hero__title {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 5.5vw, 4.9rem);
+  line-height: 1.02;
+  color: #E9D8C4;
+  margin-bottom: 14px;
+}
+
+.alma-hero__tagline {
+  font-size: clamp(1.1rem, 1.6vw, 1.35rem);
+  font-weight: 600;
+  color: #E9D8C4;
+  margin-bottom: 12px;
+}
+
+.alma-hero__meta {
+  font-size: 0.95rem;
+  color: #B8A99B;
+  max-width: 540px;
+}
+
+/* Mockups de teléfono en el Hero */
+.alma-hero__phones {
+  position: relative;
+  min-height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone-mockup {
+  width: 200px;
+  border-radius: 26px;
+  overflow: hidden;
+  border: 6px solid #191615;
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.55);
+  background: #191615;
+}
+
+.phone-mockup img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.phone-mockup--back {
+  transform: rotate(-8deg) translateX(26px) translateY(12px);
+  opacity: 0.92;
+}
+
+.phone-mockup--front {
+  position: relative;
+  z-index: 2;
+  transform: rotate(4deg) translateX(-18px);
+}
+
+/* 2. CUERPO CREMA */
+.alma-body {
+  position: relative;
+  flex: 1;
+  background: #E9D8C4;
+  color: #191615;
+  border-radius: 36px 36px 0 0;
+  margin-top: -32px;
+  padding: 60px 0 76px;
+  z-index: 3;
+}
+
+.alma-overview {
+  display: grid;
+  grid-template-columns: 1.35fr 0.85fr;
+  gap: 44px;
+  align-items: start;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(117, 83, 75, 0.25);
+}
+
+.alma-description h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.7rem, 2.6vw, 2.15rem);
+  color: #191615;
+  margin-bottom: 14px;
+}
+
+.alma-description p {
+  font-size: 1.02rem;
+  color: #75534B;
+  line-height: 1.78;
+  max-width: 740px;
+}
+
+.alma-description strong {
+  color: #191615;
+}
+
+.alma-tools h3 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: #191615;
+  margin-bottom: 16px;
+}
+
+.alma-tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.alma-tag-list li {
+  padding: 8px 16px;
+  border-radius: var(--radius-pill);
+  background: rgba(169, 67, 59, 0.14);
+  border: 1px solid rgba(169, 67, 59, 0.28);
+  color: #191615;
+  font-size: 0.84rem;
+  font-weight: 600;
+}
+
+/* Pilares (Objetivo, Concepto, Resultado) */
+.alma-pillars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 40px 0 54px;
+}
+
+.alma-pillar {
+  background: rgba(184, 169, 155, 0.24);
+  border: 1.5px solid rgba(117, 83, 75, 0.3);
+  border-top: 3px solid #A9433B;
+  border-radius: var(--radius-md);
+  padding: 28px 24px;
+}
+
+.alma-pillar__num {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #A9433B;
+  margin-bottom: 8px;
+}
+
+.alma-pillar h3 {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  color: #191615;
+  margin-bottom: 10px;
+}
+
+.alma-pillar p {
+  font-size: 0.94rem;
+  color: #75534B;
+  line-height: 1.7;
+}
+
+/* Galería de pantallas móviles */
+.alma-section {
+  margin-bottom: 56px;
+}
+
+.alma-section__head {
+  margin-bottom: 28px;
+}
+
+.alma-section__head h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 2.5vw, 2.05rem);
+  color: #191615;
+  margin-bottom: 6px;
+}
+
+.alma-section__head p {
+  font-size: 0.95rem;
+  color: #75534B;
+}
+
+.alma-screens-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.alma-screen {
+  background: #191615;
+  border-radius: 24px;
+  padding: 12px;
+  box-shadow: 0 16px 34px rgba(25, 22, 21, 0.22);
+  border: 1px solid rgba(117, 83, 75, 0.35);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.alma-screen:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 22px 44px rgba(25, 22, 21, 0.3);
+}
+
+.alma-screen img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  display: block;
+}
+
+/* Banner CTA final */
+.alma-cta__banner {
+  background: linear-gradient(125deg, #191615 0%, #75534B 52%, #A9433B 100%);
+  border-radius: var(--radius-lg);
+  padding: 36px 40px;
+  color: #E9D8C4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  box-shadow: 0 20px 44px rgba(25, 22, 21, 0.25);
+}
+
+.alma-cta__text h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.45rem, 2.4vw, 2rem);
+  color: #E9D8C4;
+  margin-bottom: 6px;
+}
+
+.alma-cta__text p {
+  font-size: 0.95rem;
+  color: #B8A99B;
+}
+
+/* RESPONSIVE */
+@media (max-width: 960px) {
+  .alma-hero__grid,
+  .alma-overview,
+  .alma-pillars {
+    grid-template-columns: 1fr;
+  }
+
+  .alma-screens-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .alma-cta__banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 560px) {
+  .alma-screens-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .phone-mockup {
+    width: 155px;
+  }
+}

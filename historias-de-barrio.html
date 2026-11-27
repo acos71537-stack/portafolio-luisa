@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Historias de Barrio — Experiencia digital interactiva sobre la memoria, identidad y riqueza cultural del barrio Los Laches, Bogotá.">
+  <meta name="description"
+    content="Historias de Barrio — Experiencia digital interactiva sobre la memoria, identidad y riqueza cultural del barrio Los Laches, Bogotá.">
   <title>Historias de Barrio | Lp — Caso de Estudio</title>
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/historias-de-barrio.css">
 </head>
+
 <body>
   <!-- Navegación -->
   <header class="navbar">
     <div class="container navbar__inner">
-      <a href="index.html" class="navbar__logo" aria-label="Lp Inicio">L<span>p</span></a>
-
       <nav class="navbar__menu" aria-label="Menú principal">
         <a href="index.html" class="navbar__link">Inicio</a>
         <a href="portafolio.html" class="navbar__link active">Portafolio</a>
@@ -23,10 +24,6 @@
       </nav>
 
       <div class="navbar__actions">
-        <button class="theme-toggle" type="button" aria-label="Cambiar contraste del tema">
-          <span class="theme-toggle__stars" aria-hidden="true">✦·</span>
-          <span class="theme-toggle__orb" aria-hidden="true"></span>
-        </button>
         <button class="navbar__burger" type="button" aria-label="Abrir menú" aria-expanded="false">
           <span></span>
           <span></span>
@@ -39,7 +36,8 @@
   <main>
     <!-- 1. HERO DEL PROYECTO -->
     <section class="hb-hero">
-      <img src="assets/img/historias-de-barrio/piezas/pieza-1.jpeg" alt="Historias de Barrio — Los Laches, Bogotá" class="hb-hero__bg">
+      <img src="assets/img/historias-de-barrio/piezas/pieza-1.jpeg" alt="Historias de Barrio — Los Laches, Bogotá"
+        class="hb-hero__bg">
       <div class="hb-hero__scrim" aria-hidden="true"></div>
 
       <div class="container hb-hero__content fade-up">
@@ -100,41 +98,38 @@
           </article>
         </div>
 
-        <!-- Recorrido virtual 3D (Video) -->
-        <div class="hb-section fade-up">
-          <div class="hb-section__head">
-            <h2>Recorrido virtual en entorno 3D</h2>
-            <p>Vista audiovisual del recorrido virtual inspirado en el barrio Los Laches.</p>
-          </div>
-
-          <div class="hb-video-wrap">
-            <video
-              class="hb-video"
-              controls
-              playsinline
-              preload="metadata"
-              poster="assets/img/historias-de-barrio/piezas/pieza-1.jpeg"
-            >
-              <source src="assets/video/historias-de-barrio.mp4" type="video/mp4">
-              Tu navegador no soporta la reproducción de video HTML5.
-            </video>
-          </div>
-        </div>
-
-        <!-- Piezas gráficas principales (1.png - 5.png) -->
+        <!-- Piezas visuales del proyecto (Video izquierda + 2 fotos derecha + piezas adicionales) -->
         <div class="hb-section fade-up">
           <div class="hb-section__head">
             <h2>Piezas visuales del proyecto</h2>
-            <p>Ilustración, dirección de arte y composiciones desarrolladas para el universo gráfico.</p>
+            <p>Recorrido audiovisual, ilustración y dirección de arte desarrolladas para el universo gráfico.</p>
+          </div>
+
+          <div class="hb-media-asymmetric">
+            <div class="hb-media-asymmetric__video">
+              <video
+                class="hb-video"
+                controls
+                playsinline
+                preload="metadata"
+                poster="assets/img/historias-de-barrio/piezas/pieza-1.jpeg"
+              >
+                <source src="assets/video/historias-de-barrio.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de video HTML5.
+              </video>
+            </div>
+
+            <div class="hb-media-asymmetric__side">
+              <figure class="hb-shot">
+                <img src="assets/img/historias-de-barrio/piezas/pieza-1.jpeg" alt="Pieza visual 1 — Historias de Barrio" loading="lazy">
+              </figure>
+              <figure class="hb-shot">
+                <img src="assets/img/historias-de-barrio/piezas/pieza-2.jpeg" alt="Pieza visual 2 — Historias de Barrio" loading="lazy">
+              </figure>
+            </div>
           </div>
 
           <div class="hb-featured-grid">
-            <figure class="hb-shot hb-shot--wide">
-              <img src="assets/img/historias-de-barrio/piezas/pieza-1.jpeg" alt="Pieza visual 1 — Historias de Barrio" loading="lazy">
-            </figure>
-            <figure class="hb-shot">
-              <img src="assets/img/historias-de-barrio/piezas/pieza-2.jpeg" alt="Pieza visual 2 — Historias de Barrio" loading="lazy">
-            </figure>
             <figure class="hb-shot">
               <img src="assets/img/historias-de-barrio/piezas/pieza-3.jpeg" alt="Pieza visual 3 — Historias de Barrio" loading="lazy">
             </figure>
@@ -155,22 +150,38 @@
           </div>
 
           <div class="hb-photo-grid">
-            <figure class="hb-photo"><img src="assets/img/historias-de-barrio/20260518_142608.jpg" alt="Registro fotográfico Los Laches 1" loading="lazy"></figure>
-            <figure class="hb-photo"><img src="assets/img/historias-de-barrio/20260518_145940.jpg" alt="Registro fotográfico Los Laches 2" loading="lazy"></figure>
-            <figure class="hb-photo"><img src="assets/img/historias-de-barrio/20260518_150201.jpg" alt="Registro fotográfico Los Laches 3" loading="lazy"></figure>
-            <figure class="hb-photo"><img src="assets/img/historias-de-barrio/20260518_150945.jpg" alt="Registro fotográfico Los Laches 4" loading="lazy"></figure>
-            <figure class="hb-photo"><img src="assets/img/historias-de-barrio/20260518_154141.jpg" alt="Registro fotográfico Los Laches 5" loading="lazy"></figure>
-            <figure class="hb-photo"><img src="assets/img/historias-de-barrio/20260518_160008.jpg" alt="Registro fotográfico Los Laches 6" loading="lazy"></figure>
-            <figure class="hb-photo"><img src="assets/img/historias-de-barrio/20260518_160039.jpg" alt="Registro fotográfico Los Laches 7" loading="lazy"></figure>
-            <figure class="hb-photo"><img src="assets/img/historias-de-barrio/20260518_161103.jpg" alt="Registro fotográfico Los Laches 8" loading="lazy"></figure>
-            <figure class="hb-photo"><img src="assets/img/historias-de-barrio/20260518_161824.jpg" alt="Registro fotográfico Los Laches 9" loading="lazy"></figure>
-            <figure class="hb-photo"><img src="assets/img/historias-de-barrio/20260518_162044.jpg" alt="Registro fotográfico Los Laches 10" loading="lazy"></figure>
-            <figure class="hb-photo"><img src="assets/img/historias-de-barrio/20260518_162559.jpg" alt="Registro fotográfico Los Laches 11" loading="lazy"></figure>
-            <figure class="hb-photo"><img src="assets/img/historias-de-barrio/20260518_162922.jpg" alt="Registro fotográfico Los Laches 12" loading="lazy"></figure>
-            <figure class="hb-photo"><img src="assets/img/historias-de-barrio/IMG_20260517_175625001_HDR.jpg.jpeg" alt="Registro fotográfico Los Laches 13" loading="lazy"></figure>
-            <figure class="hb-photo"><img src="assets/img/historias-de-barrio/IMG_20260517_175816544_HDR.jpg.jpeg" alt="Registro fotográfico Los Laches 14" loading="lazy"></figure>
-            <figure class="hb-photo"><img src="assets/img/historias-de-barrio/IMG_20260517_181019309_HDR.jpg.jpeg" alt="Registro fotográfico Los Laches 15" loading="lazy"></figure>
-            <figure class="hb-photo"><img src="assets/img/historias-de-barrio/IMG_20260517_181901297.jpg.jpeg" alt="Registro fotográfico Los Laches 16" loading="lazy"></figure>
+            <figure class="hb-photo"><img src="assets/img/historias-de-barrio/20260518_142608.jpg"
+                alt="Registro fotográfico Los Laches 1" loading="lazy"></figure>
+            <figure class="hb-photo"><img src="assets/img/historias-de-barrio/20260518_145940.jpg"
+                alt="Registro fotográfico Los Laches 2" loading="lazy"></figure>
+            <figure class="hb-photo"><img src="assets/img/historias-de-barrio/20260518_150201.jpg"
+                alt="Registro fotográfico Los Laches 3" loading="lazy"></figure>
+            <figure class="hb-photo"><img src="assets/img/historias-de-barrio/20260518_150945.jpg"
+                alt="Registro fotográfico Los Laches 4" loading="lazy"></figure>
+            <figure class="hb-photo"><img src="assets/img/historias-de-barrio/20260518_154141.jpg"
+                alt="Registro fotográfico Los Laches 5" loading="lazy"></figure>
+            <figure class="hb-photo"><img src="assets/img/historias-de-barrio/20260518_160008.jpg"
+                alt="Registro fotográfico Los Laches 6" loading="lazy"></figure>
+            <figure class="hb-photo"><img src="assets/img/historias-de-barrio/20260518_160039.jpg"
+                alt="Registro fotográfico Los Laches 7" loading="lazy"></figure>
+            <figure class="hb-photo"><img src="assets/img/historias-de-barrio/20260518_161103.jpg"
+                alt="Registro fotográfico Los Laches 8" loading="lazy"></figure>
+            <figure class="hb-photo"><img src="assets/img/historias-de-barrio/20260518_161824.jpg"
+                alt="Registro fotográfico Los Laches 9" loading="lazy"></figure>
+            <figure class="hb-photo"><img src="assets/img/historias-de-barrio/20260518_162044.jpg"
+                alt="Registro fotográfico Los Laches 10" loading="lazy"></figure>
+            <figure class="hb-photo"><img src="assets/img/historias-de-barrio/20260518_162559.jpg"
+                alt="Registro fotográfico Los Laches 11" loading="lazy"></figure>
+            <figure class="hb-photo"><img src="assets/img/historias-de-barrio/20260518_162922.jpg"
+                alt="Registro fotográfico Los Laches 12" loading="lazy"></figure>
+            <figure class="hb-photo"><img src="assets/img/historias-de-barrio/IMG_20260517_175625001_HDR.jpg.jpeg"
+                alt="Registro fotográfico Los Laches 13" loading="lazy"></figure>
+            <figure class="hb-photo"><img src="assets/img/historias-de-barrio/IMG_20260517_175816544_HDR.jpg.jpeg"
+                alt="Registro fotográfico Los Laches 14" loading="lazy"></figure>
+            <figure class="hb-photo"><img src="assets/img/historias-de-barrio/IMG_20260517_181019309_HDR.jpg.jpeg"
+                alt="Registro fotográfico Los Laches 15" loading="lazy"></figure>
+            <figure class="hb-photo"><img src="assets/img/historias-de-barrio/IMG_20260517_181901297.jpg.jpeg"
+                alt="Registro fotográfico Los Laches 16" loading="lazy"></figure>
           </div>
         </div>
 
@@ -182,12 +193,8 @@
               <h2>Explora el recorrido virtual de Historias de Barrio</h2>
               <p>Descubre los relatos, los recursos audiovisuales y el entorno 3D del barrio Los Laches.</p>
             </div>
-            <a
-              href="https://acos71537-stack.github.io/historiasdebarrio/#inicio"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="btn btn--cream hb-cta__btn"
-            >
+            <a href="https://acos71537-stack.github.io/historiasdebarrio/#inicio" target="_blank"
+              rel="noopener noreferrer" class="btn btn--cream hb-cta__btn">
               Visitar Historias de Barrio <span aria-hidden="true">→</span>
             </a>
           </div>
@@ -208,4 +215,5 @@
 
   <script src="js/main.js"></script>
 </body>
+
 </html>
