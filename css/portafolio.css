@@ -497,7 +497,20 @@
   border-radius: 0 0 8px 8px;
 }
 
-/* 6. Humans of NY Tote */
+/* 6. Exploración ilustrativa (Portada) */
+.art-ilus-cover {
+  width: 100%;
+  height: 100%;
+  background: #191615;
+}
+
+.art-ilus-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 6b. Humans of NY Tote (legacy) */
 .art-tote {
   width: 100%;
   height: 100%;
