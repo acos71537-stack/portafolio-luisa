@@ -1,0 +1,240 @@
+/* ==========================================================================
+   EXPLORACION-FOTOGRAFICA.CSS — Estilos para exploracion-fotografica.html
+   Paleta: #191615, #A9433B, #D16C69, #E9D8C4, #75534B, #B8A99B
+   ========================================================================== */
+
+/* 1. HERO */
+.foto-hero {
+  background: linear-gradient(125deg, #191615 0%, #261E1C 58%, #3B2320 100%);
+  padding: 64px 0 92px;
+}
+
+.foto-hero__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: #E9D8C4;
+  opacity: 0.9;
+  margin-bottom: 24px;
+}
+
+.foto-hero__back:hover {
+  opacity: 1;
+  color: #D16C69;
+  transform: translateX(-4px);
+}
+
+.foto-hero__kicker {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #D16C69;
+  margin-bottom: 10px;
+}
+
+.foto-hero__title {
+  font-family: var(--font-display);
+  font-size: clamp(2.6rem, 5vw, 4.4rem);
+  line-height: 1.05;
+  color: #E9D8C4;
+  margin-bottom: 16px;
+}
+
+.foto-hero__meta {
+  font-size: 0.96rem;
+  color: #B8A99B;
+  max-width: 600px;
+}
+
+/* 2. CUERPO CREMA */
+.foto-body {
+  position: relative;
+  flex: 1;
+  background: #E9D8C4;
+  color: #191615;
+  border-radius: 36px 36px 0 0;
+  margin-top: -32px;
+  padding: 60px 0 76px;
+  z-index: 3;
+}
+
+.foto-overview {
+  display: grid;
+  grid-template-columns: 1.35fr 0.85fr;
+  gap: 44px;
+  align-items: start;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(117, 83, 75, 0.25);
+}
+
+.foto-description h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.7rem, 2.6vw, 2.15rem);
+  color: #191615;
+  margin-bottom: 14px;
+}
+
+.foto-description p {
+  font-size: 1.02rem;
+  color: #75534B;
+  line-height: 1.78;
+  max-width: 740px;
+}
+
+.foto-tags h3 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: #191615;
+  margin-bottom: 16px;
+}
+
+.foto-tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.foto-tag-list li {
+  padding: 8px 16px;
+  border-radius: var(--radius-pill);
+  background: rgba(169, 67, 59, 0.14);
+  border: 1px solid rgba(169, 67, 59, 0.28);
+  color: #191615;
+  font-size: 0.84rem;
+  font-weight: 600;
+}
+
+/* Objetivo y Resultados */
+.foto-pillars {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  padding: 40px 0 54px;
+}
+
+.foto-pillar {
+  background: rgba(184, 169, 155, 0.24);
+  border: 1.5px solid rgba(117, 83, 75, 0.3);
+  border-top: 3px solid #A9433B;
+  border-radius: var(--radius-md);
+  padding: 30px 28px;
+}
+
+.foto-pillar__num {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #A9433B;
+  margin-bottom: 8px;
+}
+
+.foto-pillar h3 {
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+  color: #191615;
+  margin-bottom: 10px;
+}
+
+.foto-pillar p {
+  font-size: 0.96rem;
+  color: #75534B;
+  line-height: 1.72;
+}
+
+/* Visor PDF */
+.foto-section {
+  margin-bottom: 56px;
+}
+
+.foto-section__head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.foto-section__head h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 2.5vw, 2.05rem);
+  color: #191615;
+  margin-bottom: 6px;
+}
+
+.foto-section__head p {
+  font-size: 0.95rem;
+  color: #75534B;
+}
+
+.foto-pdf-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.foto-pdf-frame {
+  width: 100%;
+  height: 82vh;
+  min-height: 620px;
+  background: #191615;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 2px solid rgba(117, 83, 75, 0.35);
+  box-shadow: 0 20px 48px rgba(25, 22, 21, 0.24);
+}
+
+.foto-pdf-embed {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* CTA final */
+.foto-cta__banner {
+  background: linear-gradient(125deg, #191615 0%, #75534B 52%, #A9433B 100%);
+  border-radius: var(--radius-lg);
+  padding: 36px 40px;
+  color: #E9D8C4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  box-shadow: 0 20px 44px rgba(25, 22, 21, 0.25);
+}
+
+.foto-cta__banner h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.45rem, 2.4vw, 2rem);
+  color: #E9D8C4;
+  margin-bottom: 6px;
+}
+
+.foto-cta__banner p {
+  font-size: 0.95rem;
+  color: #B8A99B;
+}
+
+/* RESPONSIVE */
+@media (max-width: 860px) {
+  .foto-overview,
+  .foto-pillars {
+    grid-template-columns: 1fr;
+  }
+
+  .foto-pdf-frame {
+    height: 70vh;
+    min-height: 460px;
+  }
+
+  .foto-cta__banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
